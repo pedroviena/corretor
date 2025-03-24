@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobiliária Elite - Imóveis de Luxo</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader-logo">E</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-text">CARREGANDO</div>
+        </div>
+    </div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-dot-outline"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="brand-logo">E</div>
+                <div class="brand-text">
+                    <span class="brand-name">ELITE</span>
+                    <span class="brand-tagline">Imóveis de Luxo</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#properties">Imóveis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav-cta-container">
+                    <a href="#" class="nav-cta">
+                        <span>Agendar Visita</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-image"></div>
+        <div class="overlay"></div>
+        <div class="container h-100 d-flex align-items-center">
+            <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                <span class="hero-subtitle">Imóveis de Alto Padrão</span>
+                <h1 class="hero-title">
+                    <span class="text-reveal">Descubra o Luxo</span>
+                    <span class="text-reveal">em Cada Detalhe</span>
+                </h1>
+                <p class="hero-description">Oferecemos as melhores opções de imóveis de luxo, com localização privilegiada, arquitetura exclusiva e acabamento premium para atender aos clientes mais exigentes.</p>
+                <div class="hero-buttons">
+                    <a href="#properties" class="btn btn-primary">Ver Imóveis</a>
+                    <a href="#contact" class="btn btn-outline">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+        <div class="hero-social">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+    
+    <!-- Marquee Section -->
+    <div class="marquee-section">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>Imóveis de Luxo</span>
+                <span class="marquee-separator">•</span>
+                <span>Atendimento Premium</span>
+                <span class="marquee-separator">•</span>
+                <span>Localização Exclusiva</span>
+                <span class="marquee-separator">•</span>
+                <span>Arquitetura Sofisticada</span>
+                <span class="marquee-separator">•</span>
+                <span>Imóveis de Luxo</span>
+                <span class="marquee-separator">•</span>
+                <span>Atendimento Premium</span>
+                <span class="marquee-separator">•</span>
+                <span>Localização Exclusiva</span>
+                <span class="marquee-separator">•</span>
+                <span>Arquitetura Sofisticada</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Featured Properties Slider -->
+    <section class="featured-slider">
+        <div class="container">
+            <div class="featured-properties-carousel">
+                <div class="featured-property">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" alt="Mansão Moderna">
+                    </div>
+                    <div class="property-info">
+                        <span class="property-location">Jardins, São Paulo</span>
+                        <h3>Mansão Moderna</h3>
+                        <span class="price">R$ 12.500.000</span>
+                        <a href="#" class="property-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="featured-property">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Cobertura Duplex">
+                    </div>
+                    <div class="property-info">
+                        <span class="property-location">Leblon, Rio de Janeiro</span>
+                        <h3>Cobertura Duplex</h3>
+                        <span class="price">R$ 8.900.000</span>
+                        <a href="#" class="property-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="featured-property">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80" alt="Casa de Campo">
+                    </div>
+                    <div class="property-info">
+                        <span class="property-location">Bragança Paulista, SP</span>
+                        <h3>Casa de Campo</h3>
+                        <span class="price">R$ 5.200.000</span>
+                        <a href="#" class="property-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="featured-property">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mansão Contemporânea">
+                    </div>
+                    <div class="property-info">
+                        <span class="property-location">Alphaville, SP</span>
+                        <h3>Mansão Contemporânea</h3>
+                        <span class="price">R$ 9.800.000</span>
+                        <a href="#" class="property-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-img-container">
+                        <div class="about-img-main">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sobre Nós">
+                        </div>
+                        <div class="about-img-shape"></div>
+                        <div class="about-experience">
+                            <div class="number">25</div>
+                            <div class="text">Anos de Experiência</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="section-title">
+                        <span class="subtitle">Sobre Nós</span>
+                        <h2>Excelência em Imóveis de Alto Padrão</h2>
+                        <div class="title-separator"></div>
+                    </div>
+                    <p class="about-text">A Elite Imóveis é uma empresa especializada em imóveis de alto padrão, com mais de 25 anos de experiência no mercado. Nossa missão é proporcionar aos nossos clientes uma experiência única na busca pelo imóvel dos sonhos.</p>
+                    <p class="about-text">Contamos com uma equipe de profissionais altamente qualificados, que trabalham com dedicação e excelência para oferecer o melhor atendimento e as melhores opções de imóveis de luxo.</p>
+                    <div class="row about-stats">
+                        <div class="col-md-4">
+                            <div class="stat-item">
+                                <div class="stat-number">
+                                    <span class="counter">500</span>
+                                    <span class="stat-plus">+</span>
+                                </div>
+                                <div class="stat-text">Imóveis Vendidos</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-item">
+                                <div class="stat-number">
+                                    <span class="counter">98</span>
+                                    <span class="stat-percent">%</span>
+                                </div>
+                                <div class="stat-text">Clientes Satisfeitos</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-item">
+                                <div class="stat-number">
+                                    <span class="counter">2.5</span>
+                                    <span class="stat-billion">B</span>
+                                </div>
+                                <div class="stat-text">Em Vendas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Nossos Serviços</span>
+                <h2>Soluções Imobiliárias Exclusivas</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Compra e Venda</h3>
+                        <p>Assessoria completa para compra e venda de imóveis de alto padrão, com análise de mercado e negociação personalizada.</p>
+                        <a href="#" class="service-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3>Administração de Imóveis</h3>
+                        <p>Gerenciamento completo de imóveis para locação, com seleção de inquilinos, manutenção e gestão financeira.</p>
+                        <a href="#" class="service-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Personal Broker</h3>
+                        <p>Serviço exclusivo de busca personalizada de imóveis, de acordo com as necessidades e preferências do cliente.</p>
+                        <a href="#" class="service-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Consultoria de Investimentos</h3>
+                        <p>Análise de oportunidades de investimento imobiliário, com estudo de viabilidade e projeção de retorno.</p>
+                        <a href="#" class="service-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Imóveis Internacionais</h3>
+                        <p>Parceria com imobiliárias internacionais para compra, venda e locação de imóveis em diversos países.</p>
+                        <a href="#" class="service-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Lançamentos Exclusivos</h3>
+                        <p>Acesso privilegiado a lançamentos de empreendimentos de alto padrão, com condições especiais.</p>
+                        <a href="#" class="service-link">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Properties Section -->
+    <section id="properties" class="properties-section">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Nossos Imóveis</span>
+                <h2>Propriedades em Destaque</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+            <div class="properties-filter" data-aos="fade-up" data-aos-delay="200">
+                <ul>
+                    <li class="active" data-filter="*">Todos</li>
+                    <li data-filter=".residential">Residencial</li>
+                    <li data-filter=".commercial">Comercial</li>
+                    <li data-filter=".luxury">Luxo</li>
+                    <li data-filter=".international">Internacional</li>
+                </ul>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 mb-4 property-item residential luxury">
+                    <div class="property-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="property-thumb">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mansão Contemporânea">
+                            <div class="property-tag">Venda</div>
+                            <div class="property-tag tag-exclusive">Exclusivo</div>
+                            <div class="property-thumb-overlay">
+                                <div class="property-thumb-actions">
+                                    <a href="#" class="action-icon virtual-tour"><i class="fas fa-vr-cardboard"></i></a>
+                                    <a href="#" class="action-icon video-tour"><i class="fas fa-video"></i></a>
+                                    <a href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" data-lightbox="property-1" class="action-icon"><i class="fas fa-images"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-location">
+                                <i class="fas fa-map-marker-alt"></i> Alphaville, São Paulo
+                            </div>
+                            <h3 class="property-title"><a href="#">Mansão Contemporânea</a></h3>
+                            <p class="property-description">Mansão contemporânea com 5 suítes, piscina, jardim, academia e vista panorâmica.</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 5</span>
+                                <span><i class="fas fa-bath"></i> 7</span>
+                                <span><i class="fas fa-ruler-combined"></i> 850m²</span>
+                            </div>
+                            <div class="property-price">R$ 9.800.000</div>
+                            <a href="#" class="btn btn-outline-primary w-100">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 property-item residential">
+                    <div class="property-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="property-thumb">
+                            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Apartamento de Luxo">
+                            <div class="property-tag">Venda</div>
+                            <div class="property-tag tag-new">Novo</div>
+                            <div class="property-thumb-overlay">
+                                <div class="property-thumb-actions">
+                                    <a href="#" class="action-icon virtual-tour"><i class="fas fa-vr-cardboard"></i></a>
+                                    <a href="#" class="action-icon video-tour"><i class="fas fa-video"></i></a>
+                                    <a href="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" data-lightbox="property-2" class="action-icon"><i class="fas fa-images"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-location">
+                                <i class="fas fa-map-marker-alt"></i> Jardins, São Paulo
+                            </div>
+                            <h3 class="property-title"><a href="#">Apartamento de Luxo</a></h3>
+                            <p class="property-description">Apartamento de alto padrão com 3 suítes, varanda gourmet e vista para o parque.</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 3</span>
+                                <span><i class="fas fa-bath"></i> 4</span>
+                                <span><i class="fas fa-ruler-combined"></i> 280m²</span>
+                            </div>
+                            <div class="property-price">R$ 4.500.000</div>
+                            <a href="#" class="btn btn-outline-primary w-100">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 property-item commercial">
+                    <div class="property-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="property-thumb">
+                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Escritório Corporativo">
+                            <div class="property-tag">Venda/Locação</div>
+                            <div class="property-thumb-overlay">
+                                <div class="property-thumb-actions">
+                                    <a href="#" class="action-icon virtual-tour"><i class="fas fa-vr-cardboard"></i></a>
+                                    <a href="#" class="action-icon video-tour"><i class="fas fa-video"></i></a>
+                                    <a href="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" data-lightbox="property-3" class="action-icon"><i class="fas fa-images"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-location">
+                                <i class="fas fa-map-marker-alt"></i> Itaim Bibi, São Paulo
+                            </div>
+                            <h3 class="property-title"><a href="#">Escritório Corporativo</a></h3>
+                            <p class="property-description">Escritório corporativo com infraestrutura completa, localização privilegiada e vista panorâmica.</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-door-open"></i> 10</span>
+                                <span><i class="fas fa-parking"></i> 5</span>
+                                <span><i class="fas fa-ruler-combined"></i> 450m²</span>
+                            </div>
+                            <div class="property-price">R$ 7.200.000</div>
+                            <a href="#" class="btn btn-outline-primary w-100">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 property-item residential luxury">
+                    <div class="property-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="property-thumb">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80" alt="Casa de Campo">
+                            <div class="property-tag">Venda</div>
+                            <div class="property-thumb-overlay">
+                                <div class="property-thumb-actions">
+                                    <a href="#" class="action-icon virtual-tour"><i class="fas fa-vr-cardboard"></i></a>
+                                    <a href="#" class="action-icon video-tour"><i class="fas fa-video"></i></a>
+                                    <a href="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80" data-lightbox="property-4" class="action-icon"><i class="fas fa-images"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-location">
+                                <i class="fas fa-map-marker-alt"></i> Bragança Paulista, SP
+                            </div>
+                            <h3 class="property-title"><a href="#">Casa de Campo</a></h3>
+                            <p class="property-description">Casa de campo com 4 suítes, piscina, campo de golfe, lago e área de lazer completa.</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 4</span>
+                                <span><i class="fas fa-bath"></i> 5</span>
+                                <span><i class="fas fa-ruler-combined"></i> 650m²</span>
+                            </div>
+                            <div class="property-price">R$ 5.200.000</div>
+                            <a href="#" class="btn btn-outline-primary w-100">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 property-item international">
+                    <div class="property-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="property-thumb">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Villa em Miami">
+                            <div class="property-tag">Venda</div>
+                            <div class="property-tag tag-international">Internacional</div>
+                            <div class="property-thumb-overlay">
+                                <div class="property-thumb-actions">
+                                    <a href="#" class="action-icon virtual-tour"><i class="fas fa-vr-cardboard"></i></a>
+                                    <a href="#" class="action-icon video-tour"><i class="fas fa-video"></i></a>
+                                    <a href="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" data-lightbox="property-5" class="action-icon"><i class="fas fa-images"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-location">
+                                <i class="fas fa-map-marker-alt"></i> Miami Beach, EUA
+                            </div>
+                            <h3 class="property-title"><a href="#">Villa em Miami</a></h3>
+                            <p class="property-description">Villa de luxo com vista para o mar, 6 suítes, piscina infinita e acesso à praia privativa.</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 6</span>
+                                <span><i class="fas fa-bath"></i> 8</span>
+                                <span><i class="fas fa-ruler-combined"></i> 950m²</span>
+                            </div>
+                            <div class="property-price">US$ 8.500.000</div>
+                            <a href="#" class="btn btn-outline-primary w-100">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 property-item commercial">
+                    <div class="property-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="property-thumb">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Edifício Comercial">
+                            <div class="property-tag">Venda/Locação</div>
+                            <div class="property-thumb-overlay">
+                                <div class="property-thumb-actions">
+                                    <a href="#" class="action-icon virtual-tour"><i class="fas fa-vr-cardboard"></i></a>
+                                    <a href="#" class="action-icon video-tour"><i class="fas fa-video"></i></a>
+                                    <a href="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" data-lightbox="property-6" class="action-icon"><i class="fas fa-images"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-location">
+                                <i class="fas fa-map-marker-alt"></i> Faria Lima, São Paulo
+                            </div>
+                            <h3 class="property-title"><a href="#">Edifício Comercial</a></h3>
+                            <p class="property-description">Edifício comercial com 15 andares, localização privilegiada e infraestrutura completa.</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-building"></i> 15</span>
+                                <span><i class="fas fa-parking"></i> 50</span>
+                                <span><i class="fas fa-ruler-combined"></i> 8500m²</span>
+                            </div>
+                            <div class="property-price">R$ 85.000.000</div>
+                            <a href="#" class="btn btn-outline-primary w-100">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-primary">Ver Todos os Imóveis</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Immersive Experience Section -->
+    <section class="immersive-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="section-title">
+                        <span class="subtitle">Experiência Imersiva</span>
+                        <h2>Visite Imóveis Sem Sair de Casa</h2>
+                        <div class="title-separator"></div>
+                    </div>
+                    <p>Oferecemos uma experiência imersiva para que você possa visitar os imóveis sem sair de casa. Com tecnologia de ponta, você pode explorar cada detalhe do imóvel através de tours virtuais em 3D e vídeos em alta definição.</p>
+                    <ul class="immersive-features">
+                        <li><i class="fas fa-check-circle"></i> Tours virtuais em 3D</li>
+                        <li><i class="fas fa-check-circle"></i> Vídeos em alta definição</li>
+                        <li><i class="fas fa-check-circle"></i> Plantas interativas</li>
+                        <li><i class="fas fa-check-circle"></i> Simulação de decoração</li>
+                        <li><i class="fas fa-check-circle"></i> Visitas guiadas por vídeo chamada</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Agendar Demonstração</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="immersive-preview">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Experiência Imersiva">
+                        <a href="#" class="play-button">
+                            <i class="fas fa-play"></i>
+                        </a>
+                        <div class="immersive-badge">
+                            <span>3D Tour</span>
+                            <span>4K Video</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Depoimentos</span>
+                <h2>O Que Nossos Clientes Dizem</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+            <div class="testimonials-slider mt-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">A Elite Imóveis superou todas as minhas expectativas. O atendimento foi impecável, e encontraram o imóvel perfeito para minha família em tempo recorde.</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Silva">
+                            </div>
+                            <div class="author-info">
+                                <h5>Carlos Silva</h5>
+                                <p>Empresário</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Profissionalismo e excelência definem a Elite Imóveis. Todo o processo de compra foi conduzido com transparência e agilidade. Recomendo a todos.</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Martins">
+                            </div>
+                            <div class="author-info">
+                                <h5>Ana Martins</h5>
+                                <p>Médica</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">A experiência imersiva oferecida pela Elite Imóveis foi fundamental para a minha decisão de compra, já que eu estava no exterior. Excelente serviço!</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Roberto Mendes">
+                            </div>
+                            <div class="author-info">
+                                <h5>Roberto Mendes</h5>
+                                <p>Executivo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Vendi meu imóvel em tempo recorde e por um valor acima do esperado. A estratégia de marketing da Elite Imóveis é realmente eficiente.</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Patrícia Alves">
+                            </div>
+                            <div class="author-info">
+                                <h5>Patrícia Alves</h5>
+                                <p>Advogada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="section-title">
+                        <span class="subtitle">Contato</span>
+                        <h2>Entre em Contato Conosco</h2>
+                        <div class="title-separator"></div>
+                    </div>
+                    <p class="mb-5">Estamos à disposição para atender às suas necessidades imobiliárias. Entre em contato conosco e descubra como podemos ajudá-lo a encontrar o imóvel dos seus sonhos.</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h5>Endereço</h5>
+                            <p>Av. Paulista, 1000, Jardins<br>São Paulo - SP, 01310-100</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h5>Telefone</h5>
+                            <p>+55 (11) 3456-7890<br>+55 (11) 98765-4321</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h5>Email</h5>
+                            <p>contato@eliteimoveis.com<br>vendas@eliteimoveis.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h5>Siga-nos</h5>
+                        <div class="social-links mt-3">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-form-container">
+                        <h3 class="mb-4">Envie uma Mensagem</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Nome" required>
+                                        <label for="name">Nome</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Telefone" required>
+                                        <label for="phone">Telefone</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" placeholder="" style="height: 150px" required></textarea>
+                                        <label for="message">Mensagem</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacy" required>
+                                        <label class="form-check-label" for="privacy">
+                                            Concordo com a <a href="#">Política de Privacidade</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="text-white mb-3">Receba Novidades e Lançamentos Exclusivos</h2>
+                    <p class="text-white opacity-75 mb-0">Cadastre-se para receber em primeira mão informações sobre lançamentos, imóveis exclusivos e dicas de investimento.</p>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Seu email" required>
+                            <button class="btn btn-primary" type="submit">Inscrever-se</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="#" class="footer-brand">
+                        <div class="brand-logo">E</div>
+                        <div class="brand-text">
+                            <span class="brand-name">ELITE</span>
+                            <span class="brand-tagline">Imóveis de Luxo</span>
+                        </div>
+                    </a>
+                    <p class="mt-4 mb-4">A Elite Imóveis é uma empresa especializada em imóveis de alto padrão, com mais de 25 anos de experiência no mercado. Nossa missão é proporcionar aos nossos clientes uma experiência única na busca pelo imóvel dos sonhos.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+                    <h5>Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#properties">Imóveis</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <h5>Serviços</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Compra e Venda</a></li>
+                        <li><a href="#">Administração de Imóveis</a></li>
+                        <li><a href="#">Personal Broker</a></li>
+                        <li><a href="#">Consultoria de Investimentos</a></li>
+                        <li><a href="#">Imóveis Internacionais</a></li>
+                        <li><a href="#">Lançamentos Exclusivos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Horário de Atendimento</h5>
+                    <ul class="footer-hours">
+                        <li>Segunda - Sexta: 9h às 18h</li>
+                        <li>Sábado: 9h às 13h</li>
+                        <li>Domingo: Fechado</li>
+                    </ul>
+                    <h5 class="mt-4">Contato</h5>
+                    <ul class="footer-links">
+                        <li><a href="tel:+551134567890">+55 (11) 3456-7890</a></li>
+                        <li><a href="mailto:contato@eliteimoveis.com">contato@eliteimoveis.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright">© 2025. Desenvolvido por Pedro Viena. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Appointment Modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Agendar Visita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="appointmentForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="appointmentName" placeholder="Nome" required>
+                                    <label for="appointmentName">Nome</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="appointmentEmail" placeholder="Email" required>
+                                    <label for="appointmentEmail">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="appointmentPhone" placeholder="Telefone" required>
+                                    <label for="appointmentPhone">Telefone</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-floating">
+                                    <select class="form-select" id="appointmentProperty" required>
+                                        <option value="" selected disabled>Selecione</option>
+                                        <option value="Mansão Contemporânea">Mansão Contemporânea</option>
+                                        <option value="Apartamento de Luxo">Apartamento de Luxo</option>
+                                        <option value="Escritório Corporativo">Escritório Corporativo</option>
+                                        <option value="Casa de Campo">Casa de Campo</option>
+                                        <option value="Villa em Miami">Villa em Miami</option>
+                                        <option value="Edifício Comercial">Edifício Comercial</option>
+                                        <option value="Outro">Outro</option>
+                                    </select>
+                                    <label for="appointmentProperty">Imóvel</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-floating">
+                                    <input type="date" class="form-control" id="appointmentDate" required>
+                                    <label for="appointmentDate">Data</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-floating">
+                                    <input type="time" class="form-control" id="appointmentTime" required>
+                                    <label for="appointmentTime">Horário</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="appointmentMessage" placeholder="Mensagem" style="height: 100px"></textarea>
+                                    <label for="appointmentMessage">Observações (opcional)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="submitAppointment">Agendar Visita</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+    <!-- Slick Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <!-- Tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
