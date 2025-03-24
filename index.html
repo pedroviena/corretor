@@ -32,15 +32,24 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Definir tema escuro como padrão -->
+    <!-- Forçar tema escuro em dispositivos móveis -->
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#121212">
+    
     <style>
-        :root {
-            color-scheme: dark;
+        @media (max-width: 768px) {
+            :root {
+                color-scheme: dark;
+            }
+            
+            body {
+                color-scheme: dark;
+            }
         }
         
+        /* Forçar tema escuro por padrão em todas as telas */
         body {
-            background-color: #121212;
-            color: #ffffff;
+            color-scheme: dark;
         }
 
         /* Forçar tema escuro por padrão */
